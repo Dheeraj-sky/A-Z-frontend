@@ -10,10 +10,8 @@ import { useNavigate } from "react-router-dom";
 const Cart = () => {
 
     const { account, setAccount } = useContext(LoginContext);
+    
     // console.log(account);
-
-
-
     const { id } = useParams("");
     // console.log(id);
 
@@ -87,7 +85,6 @@ const Cart = () => {
                             <button className="cart_btn1" onClick={() => addtocart(inddata.id)}>Add to Cart</button>
                             <button className="cart_btn2">Buy Now</button>
                         </div>
-
                     </div>
                     <div className="right_cart">
                         <h3>{inddata.title.shortTitle}</h3>
